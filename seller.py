@@ -20,9 +20,7 @@ def get_product_list(last_id, client_id, seller_token):
         seller_token (str): Токен продавца озон
 
     Returns:
-        Union[dict, str, None]: Ожидаемый ответ - спичок товаров с их 
-            параметрами, возможно строка с сообщением, либо None, 
-            если в ответе отсутствует ключ 'result'.
+        dict: Словарь со списком товаров
 
     Raises:
         requests.exceptions.HTTPError: Если сервер вернёт HTTP-ошибку.
@@ -82,7 +80,7 @@ def update_price(prices: list, client_id, seller_token):
         seller_token (str): Токен продавца озон
 
     Returns:
-        dict: Возвращает ответ о выполнении операции в флормате JSON
+        dict: Возвращает ответ о выполнении операции
 
     Raises:
         requests.exceptions.HTTPError: Если сервер вернёт HTTP-ошибку.
@@ -110,7 +108,7 @@ def update_stocks(stocks: list, client_id, seller_token):
         seller_token (str): Токен продавца Озон
 
     Returns:
-        dict: Возвращает ответ о выполнении операции в формате JSON
+        dict: Возвращает ответ о выполнении операции
 
     Raises:
         requests.exceptions.HTTPError: Если сервер вернёт HTTP-ошибку.

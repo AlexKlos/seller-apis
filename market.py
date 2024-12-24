@@ -51,7 +51,7 @@ def update_stocks(stocks, campaign_id, access_token):
         access_token (str): Токен для авторизации API Яндекс-Маркета
 
     Returns:
-        dict: Возвращает ответ о выполнении операции в формате JSON
+        dict: Возвращает ответ о выполнении операции
 
     Raises:
         requests.exceptions.RequestException: Ошибки HTTP-запроса
@@ -80,7 +80,7 @@ def update_price(prices, campaign_id, access_token):
         access_token (str): Токен для авторизации API Яндекс-Маркета
 
     Returns:
-        dict: Возвращает ответ о выполнении операции в флормате JSON
+        dict: Возвращает ответ о выполнении операции
 
     Raises:
         requests.exceptions.RequestException: Ошибки HTTP-запроса.
